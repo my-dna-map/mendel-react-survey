@@ -1,0 +1,563 @@
+$blueColor: #316fb6;
+$orangeColor: #dd6917;
+$textColor: #67625d;
+$color: #276fb6;
+
+// Import CoreUI for React components library
+@import '@coreui/coreui/scss/coreui';
+
+// Import Chart.js custom mtooltips styles
+@import '@coreui/chartjs/scss/coreui-chartjs';
+
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+body {
+  background-size: cover;
+  font-family: 'MuseoSansRounded', sans-serif !important;
+}
+
+html {
+  height: 100%;
+}
+
+body,
+#root > div {
+  height: 100%;
+}
+
+$pLeft: 60px;
+
+.login-container {
+  width: 100%;
+  padding: 20px 0;
+
+  .btn-label {
+    padding-left: $pLeft;
+    font-size: 14px;
+  }
+}
+
+.initial-page {
+  .link-section {
+    padding-left: $pLeft;
+  }
+}
+
+.link-section {
+  p {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  a {
+    color: $blueColor;
+    text-decoration: none;
+  }
+}
+
+// Para el lateral
+
+$borderRadius: 10px;
+
+.wrap {
+  padding: 60px 40px 40px 40px;
+  background: #ffffff;
+  border-top-right-radius: $borderRadius;
+  border-bottom-right-radius: $borderRadius;
+}
+
+.wrapper {
+  legend {
+    color: $color;
+    border-bottom: 1px solid $color;
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
+
+//typography
+
+h1 {
+}
+
+h2 {
+  color: $textColor;
+}
+
+p {
+  color: $textColor;
+}
+
+// btn
+.btn {
+  padding: 15px 50px;
+  border-radius: 50px;
+  border: 1px solid;
+  outline: none;
+
+  &:hover {
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.15);
+  }
+
+  &.btn-medium {
+    padding: 8px 25px;
+    font-size: 0.9rem;
+  }
+
+  &.btn-blue {
+    border-color: $blueColor;
+    background: $blueColor;
+    color: #fff;
+  }
+
+  &.btn-white {
+    border-color: #cbc6c9;
+    color: $textColor;
+
+    &:hover {
+      background-color: #f2f2f2;
+    }
+  }
+
+  &.btn-orange {
+    border-color: $orangeColor;
+    background: $orangeColor;
+    color: #fff;
+
+    &:hover {
+      border-color: lighten($orangeColor, 4%);
+      background: lighten($orangeColor, 4%);
+    }
+  }
+}
+
+input.form-control {
+  &:focus {
+    border-color: #ced4da;
+    border-bottom-color: $blueColor;
+    box-shadow: none;
+    background: #ffffff;
+  }
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-ok {
+  width: 30px;
+  position: absolute;
+  bottom: 4px;
+  right: -41px;
+}
+
+.btn-add,
+.btn-remove {
+  background: none;
+  border: none;
+}
+
+.btn-add {
+  color: #316fb6;
+  margin-bottom: 20px;
+}
+
+.not-loaded {
+  display: none;
+}
+
+.dna-calendar {
+  border: none;
+
+  // hover otro día
+  .react-calendar__tile:enabled:hover,
+  .react-calendar__tile:enabled:focus {
+    background-color: rgba(0, 0, 0, 0.07);
+  }
+
+  // seleccionado
+  .react-calendar__tile--active {
+    background-color: $blueColor;
+  }
+
+  // seleccionado hover
+  .react-calendar__tile--active:enabled:hover,
+  .react-calendar__tile--active:enabled:focus {
+    background-color: darken($blueColor, 5%);
+  }
+
+  // hoy
+  .react-calendar__tile--now {
+    background: lighten($blueColor, 20%);
+    color: #fff;
+  }
+
+  // hoy hover
+  .react-calendar__tile--now:enabled:hover,
+  .react-calendar__tile--now:enabled:focus {
+    background: $blueColor;
+    color: #fff;
+  }
+
+  button:focus {
+    outline: none;
+  }
+}
+
+.calendar-selectable-hours {
+  span {
+    display: block;
+    margin: 0 2px 10px;
+    padding: 4px 10px;
+    text-align: center;
+
+    &.selected {
+      background-color: $blueColor;
+      color: #fff;
+
+      &:hover {
+        cursor: auto;
+        background-color: $blueColor;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.08);
+    }
+  }
+}
+
+.user-add-link {
+  margin-top: 16px;
+
+  a {
+    color: $orangeColor !important;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.no-hover:hover {
+  text-decoration: none;
+}
+
+.card-buttons {
+  margin-top: 20px;
+
+  button,
+  a {
+    margin-right: 4px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.bolder {
+  font-weight: bolder;
+}
+
+.cursive {
+  font-style: italic;
+}
+
+.mobile-logo {
+  padding-bottom: 20px;
+  display: block;
+  width: 100%;
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.vl {
+  border-left: 3px solid $blueColor;
+  height: 50px;
+}
+
+.bell {
+  top: 25px;
+  position: absolute;
+}
+
+.notification_header {
+  background: cornflowerblue !important;
+  height: 40px !important;
+  color: white !important;
+  border-radius: 0 !important;
+}
+
+.callout-notification {
+  --cui-callout-border-left-color: cornflowerblue !important;
+}
+
+.avatar_big {
+  background: #0254b0 !important;
+  color: white;
+  min-width: 40px;
+  min-height: 40px;
+  font-weight: bold;
+}
+
+.section_header {
+  background: $blueColor !important;
+  height: fit-content;
+  line-height: 20px;
+  color: white !important;
+  border-radius: 0 !important;
+}
+
+.section_label {
+  margin-left: 50px !important;
+
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.secction_icon {
+  //display: inline-block;
+  width: 70px;
+  position: absolute;
+  left: -13px;
+  top: -20px;
+}
+
+.question_header {
+  height: 35px !important;
+
+  border-radius: 0 !important;
+}
+
+.question_label {
+  position: absolute;
+  left: 20px;
+  top: 5px;
+  font-size: 0.9rem;
+}
+
+.group-header {
+  height: 35px !important;
+  border-radius: 0 !important;
+  background-color: $blueColor !important;
+}
+
+.blockWrapper {
+  margin-top: 15px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  font-size: 18px;
+  display: inline-block;
+  margin-left: 10px;
+  color: #276fb6;
+}
+
+.icon {
+  display: inline-block;
+  width: 40px;
+}
+
+.content {
+  display: block;
+  padding: 15px 30px;
+}
+
+.sublabel {
+  display: inline-block;
+  margin-left: 10px;
+  color: #276fb6;
+}
+
+.radio-input-form {
+  padding-right: 1rem;
+}
+.radio-input-form:last-child {
+  padding-right: 0;
+}
+
+.btn-circle.btn-xl {
+  width: 50px;
+  height: 50px;
+  padding: 13px 18px;
+  border-radius: 60px;
+  font-size: 15px;
+  text-align: center;
+}
+.btn-circle.btn-md {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.btn-circle.btn-md .icon-image {
+  mix-blend-mode: hard-light;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+}
+
+.btn-circle.btn-xs {
+  padding: 20px 20px !important;
+  border-radius: 60px;
+  border: 0;
+  font-size: 12px;
+  text-align: center;
+}
+
+.multiple-choice-icon-container {
+  display: flex;
+  justify-content: left;
+}
+
+.icon-image {
+  mix-blend-mode: hard-light;
+  width: 50px;
+  margin-left: -19px;
+  height: 50px;
+  margin-top: -14px;
+}
+
+.form-control,
+.PhoneInputInput {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.icon-text {
+  font-size: 0.9rem;
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+
+.custom-radio-button {
+  position: relative;
+  font-weight: bold;
+}
+
+.custom-radio-input-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+}
+
+.toggle-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 3px;
+}
+.rating-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin: 3px;
+  width: fit-content;
+}
+
+.nested-card {
+  padding: 0;
+  padding-bottom: 2rem;
+  padding-right: 2rem !important;
+}
+
+.get-inputs-radio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  font-size: 0.9rem;
+}
+
+.form-label-body {
+  text-align: justify;
+}
+
+.form-header-blue-bg {
+  background: #0254b0 !important;
+}
+
+.input-row {
+  background: none !important;
+  padding: 10px;
+}
+
+.btn-radio-normal {
+  background: lightsteelblue !important;
+  color: #333;
+}
+.btn-radio-checked {
+  background: #0254b0 !important;
+  color: #eee !important;
+}
+
+.btn-radio-label-normal {
+  color: #333;
+}
+.btn-radio-label-checked {
+  color: #eee !important;
+}
+
+textarea:focus,
+select:focus,
+input[type='text']:focus,
+input[type='checkbox']:focus,
+input[type='string']:focus,
+input[type='password']:focus,
+input[type='datetime']:focus,
+input[type='datetime-local']:focus,
+input[type='date']:focus,
+input[type='month']:focus,
+input[type='time']:focus,
+input[type='week']:focus,
+input[type='number']:focus,
+input[type='email']:focus,
+input[type='url']:focus,
+input[type='search']:focus,
+input[type='tel']:focus,
+input[type='color']:focus,
+input[type='select']:focus .uneditable-input:focus {
+  border-color: cornflowerblue !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px cornflowerblue !important;
+  outline: 0 none;
+}
+
+.radio-input-label-radio {
+  position: relative;
+  pointer-events: none;
+  left: -10px;
+  min-width: 20px;
+  top: -8px;
+}
+
+.radio-group-container {
+  position: relative;
+  top: 10px;
+}

@@ -1,0 +1,864 @@
+{
+  "form": {
+    "Antecedentes Personales": {
+      "description": "<div class='col-12 form-title mb-3'><p style='text-align: justify;'>Esta encuesta es para conocer su historial médico personal, que proveerá información relevante para el análisis de su test genético. <br>Recuerde responder de forma honesta al elegir la respuesta de las opciones ofrecidas.</p><p>Solo le tomará de 5 a 10 minutos realizar esta encuesta.</p></div>",
+      "groups": {
+        "Generales": {
+          "icon": "enfermedadesCorazon",
+          "label": "General inputs",
+          "questions": {
+            "generales_problemas_vision": {
+              "type": "radio3",
+              "label": "Problemas en la visión (miopía, glaucoma, estrabismo, astigmatismo, presbicia, etc.)",
+              "comments": null
+            },
+            "generales_problemas_auditivos": {
+              "type": "radio3",
+              "label": "Auditivos",
+              "comments": null
+            },
+            "generales_problemas_geneticos": {
+              "type": "radio3",
+              "label": "Defectos de nacimiento o problemas genéticos",
+              "comments": null
+            },
+            "generales_tabaquismo": {
+              "type": "radio3",
+              "label": "Tabaquismo",
+              "comments": null,
+              "subgroup": {
+                "_dependency": "Si",
+                "generales_cigarrillos": {
+                  "type": "select",
+                  "label": "Cigarrillos por día",
+                  "options": [
+                    {
+                      "value": "1 - 5",
+                      "name": "1 - 5"
+                    },
+                    {
+                      "value": "6 - 10",
+                      "name": "6 - 10"
+                    },
+                    {
+                      "value": "11 - 20 ",
+                      "name": "11 - 20"
+                    },
+                    {
+                      "value": ">20",
+                      "name": "> 20"
+                    }
+                  ]
+                },
+                "generales_periodo_fumador": {
+                  "type": "select",
+                  "label": "Periodo como fumador",
+                  "options": [
+                    {
+                      "value": "1 - años",
+                      "name": "1 - 5 años"
+                    },
+                    {
+                      "value": "5 - 10 años",
+                      "name": "5 - 10 años"
+                    },
+                    {
+                      "value": "10 - 20 años",
+                      "name": "10 - 20 años"
+                    },
+                    {
+                      "value": ">20 años",
+                      "name": "> 20 años"
+                    }
+                  ]
+                },
+                "generales_exfumador": {
+                  "type": "date",
+                  "label": "Exfumador desde",
+                  "placeholde": "años"
+                }
+              }
+            },
+            "generales_drogas_recreativas": {
+              "type": "radio3",
+              "label": "Uso de drogas recreativas",
+              "comments": null
+            },
+            "generales_alergias_medicamentos": {
+              "type": "radio3",
+              "label": "Alergias a medicamentos",
+              "comments": null
+            },
+            "generales_otras_alergias": {
+              "type": "radio3",
+              "label": "Otras alergias (látex, etc.)",
+              "comments": null
+            },
+            "generales_diabetes": {
+              "type": "radio3",
+              "label": "diabetes",
+              "comments": null,
+              "subgroup": {
+                "_dependency": "Si",
+                "generales_diabetes_tipo": {
+                  "type": "select",
+                  "label": "diabetes_tipo",
+                  "comments": null,
+                  "options": [
+                    {
+                      "value": "Tipo 1",
+                      "name": "Tipo 1"
+                    },
+                    {
+                      "value": "Tipo 2",
+                      "name": "Tipo 2"
+                    }
+                  ]
+                }
+              }
+            },
+            "generales_problemas_tiroideos": {
+              "type": "radio3",
+              "label": "Problemas tiroideos",
+              "comments": null
+            },
+            "generales_hiperlipidemia": {
+              "type": "radio3",
+              "label": "Hiperlipidemia (lípidos altos)",
+              "comments": null
+            },
+            "generales_hiperuricemia": {
+              "type": "radio3",
+              "label": "Hiperuricemia (ácido úrico elevado)",
+              "comments": null
+            },
+            "generales_hipercolesterolemia": {
+              "type": "radio3",
+              "label": "Hipercolesterolemia (colesterol alto)",
+              "comments": null
+            },
+            "generales_hipertrigliceridemia": {
+              "type": "radio3",
+              "label": "Hipertrigliceridemia (triglicéridos alto)",
+              "comments": null
+            },
+            "generales_alteracion_suenno": {
+              "type": "radio3",
+              "label": "Alteracion del sueño",
+              "comments": null,
+              "subgroup": {
+                "_dependency": "Si",
+                "generales_alteracion_suenno_tipo": {
+                  "type": "select",
+                  "label": "Tipo de alteracion",
+                  "comments": null,
+                  "options": [
+                    {
+                      "value": "Insomnio",
+                      "name": "Insomnio"
+                    },
+                    {
+                      "value": "Sueño agitado",
+                      "name": "Sueño agitado"
+                    }
+                  ]
+                }
+              }
+            },
+            "medicacion_habitual": {
+              "type": "radio3",
+              "label": "medicacion_habitual"
+            },
+            "generales_estado_nutricional": {
+              "type": "single_choice",
+              "label": "estado_nutricional",
+              "comments": null,
+              "options": [
+                {
+                  "value": "Bajo Peso",
+                  "name": "Bajo Peso",
+                  "icon": "bajopeso"
+                },
+                {
+                  "value": "Eutrófico",
+                  "name": "Eutrófico",
+                  "icon": "eutrofico"
+                },
+                {
+                  "value": "Sobrepeso",
+                  "name": "Sobrepeso",
+                  "icon": "sobrepeso"
+                }
+              ]
+            }
+          }
+        },
+        "Cardiovasculares y respiratorios": {
+          "icon": "cardiovascular",
+          "questions": {
+            "cardiovascular_patologia_valvular": {
+              "type": "radio3",
+              "label": "Patología valvular",
+              "comments": null
+            },
+            "cardiovascular_soplo_cardíaco": {
+              "type": "radio3",
+              "label": "Soplo Cardíaco",
+              "comments": null
+            },
+            "cardiovascular_enfermedad_miocardio": {
+              "type": "radio3",
+              "label": "Enfermedad del miocardio",
+              "comments": null
+            },
+            "cardiovascular_varices": {
+              "type": "radio3",
+              "label": "Varices",
+              "comments": null
+            },
+            "cardiovascular_trombosis": {
+              "type": "radio3",
+              "label": "Trombosis o coágulos de sangre (cabeza, piernas, pulmones)",
+              "comments": null
+            },
+            "cardiovascular_presion_arterial_alta": {
+              "type": "radio3",
+              "label": "Presión arterial alta (hipertensión)",
+              "comments": null
+            },
+            "cardiovascular_asma": {
+              "type": "radio3",
+              "label": "Tos crónica u otros problemas respiratorios / asma / EPOC",
+              "comments": null
+            },
+            "cardiovascular_tuberculosis": {
+              "type": "radio3",
+              "label": "Tuberculosis o exposición a la tuberculosis",
+              "comments": null
+            },
+            "cardiovascular_aneurisma_aorta": {
+              "type": "radio3",
+              "label": "Aneurisma de Aorta",
+              "comments": null
+            },
+            "cardiovascular_arritmias_cardiacas": {
+              "type": "radio3",
+              "label": "Arritmias Cardíacas",
+              "comments": null
+            }
+          }
+        },
+        "Gastrointestinales": {
+          "icon": "gastroestinal",
+          "questions": {
+            "gastrointestinales_enfermedad_celiaca": {
+              "type": "radio3",
+              "label": "Enfermedad celíaca",
+              "comments": null
+            },
+            "gastrointestinales_enfermedad_higado": {
+              "type": "radio3",
+              "label": "Enfermedad del Hígado",
+              "comments": null
+            },
+            "gastrointestinales_gastritis": {
+              "type": "radio3",
+              "label": "Gastritis o trastorno gástrico (estómago)",
+              "comments": null
+            },
+            "gastrointestinales_trastorno_colon": {
+              "type": "radio3",
+              "label": "Trastornos del colon (enfermedad de Crohn, colitis ulcerosa, pólipos, diverticulos, etc.)",
+              "comments": null
+            },
+            "gastrointestinales_vesicula": {
+              "type": "radio3",
+              "label": "Problemas en la vesícula o páncreas",
+              "comments": null
+            }
+          }
+        },
+        "Músculo-Osteoarticulares": {
+          "icon": "musculoOseo",
+          "questions": {
+            "musculo_artritis": {
+              "type": "radio3",
+              "label": "Artritis",
+              "comments": null
+            },
+            "musculo_osteoporosis": {
+              "type": "radio3",
+              "label": "Osteoporosis",
+              "comments": null
+            },
+            "musculo_dolores_musculares": {
+              "type": "radio3",
+              "label": "Dolores musculares",
+              "comments": null
+            },
+            "musculo_dolores_articulares": {
+              "type": "radio3",
+              "label": "Dolores articulares",
+              "comments": null
+            },
+            "musculo_lesiones_deportivas": {
+              "type": "radio3",
+              "label": "Lesiones deportivas (desgarros, roturas de ligamentos, fracturas, etc.)",
+              "comments": null
+            }
+          }
+        },
+        "Neurológicos y mentales": {
+          "icon": "neurologica",
+          "questions": {
+            "mentales_cefaleas": {
+              "type": "radio3",
+              "label": "Dolor de cabeza (cefaleas/migrañas)",
+              "comments": null
+            },
+            "mentales_problemas_memoria": {
+              "type": "radio3",
+              "label": "Problemas de memoria",
+              "comments": null
+            },
+            "mentales_convulsiones": {
+              "type": "radio3",
+              "label": "Convulsiones/epilepsia",
+              "comments": null
+            },
+            "mentales_accidente_cerebrovascular": {
+              "type": "radio3",
+              "label": "Accidente cerebrovascular",
+              "comments": null
+            },
+            "mentales_capacidad_motora_disminuida": {
+              "type": "radio3",
+              "label": "Capacidad motora disminuida",
+              "comments": null
+            },
+            "mentales_depresion": {
+              "type": "radio3",
+              "label": "Depresión",
+              "comments": null
+            },
+            "mentales_trastornos_psiquiatricos": {
+              "type": "radio3",
+              "label": "Trastornos psiquiátricos",
+              "comments": null
+            },
+            "mentales_parkinson": {
+              "type": "radio3",
+              "label": "Enfermedad de Parkinson",
+              "comments": null
+            },
+            "mentales_alzheimer": {
+              "type": "radio3",
+              "label": "Enfermedad de Alzheimer",
+              "comments": null
+            },
+            "mentales_esclerosis_multiple": {
+              "type": "radio3",
+              "label": "Esclerosis múltiple",
+              "comments": null
+            },
+            "mentales_esclerosis_lateral_amiotrofica": {
+              "type": "radio3",
+              "label": "Esclerosis Lateral Amiotrófica",
+              "comments": null
+            }
+          }
+        },
+        "Oncológicos y hematológicos": {
+          "icon": "oncologica",
+          "questions": {
+            "oncologicos_tumor": {
+              "type": "radio3",
+              "label": "Tumor o cáncer sólido",
+              "comments": null
+            },
+            "oncologicos_leucemia": {
+              "type": "radio3",
+              "label": "Leucemia/Linfoma",
+              "comments": null
+            },
+            "oncologicos_mielodisplasia": {
+              "type": "radio3",
+              "label": "Mielodisplasia",
+              "comments": null
+            },
+            "oncologicos_anemia": {
+              "type": "radio3",
+              "label": "Anemia",
+              "comments": null
+            },
+            "oncologicos_trastorno_coagulacion": {
+              "type": "radio3",
+              "label": "Trastorno de la coagulación",
+              "comments": null
+            }
+          }
+        },
+        "Cutáneos": {
+          "icon": "cutaneos",
+          "questions": {
+            "cutaneos_acne": {
+              "type": "radio3",
+              "label": "Acné",
+              "comments": null
+            },
+            "cutaneos_psoriasis": {
+              "type": "radio3",
+              "label": "Psoriasis",
+              "comments": null
+            },
+            "cutaneos_eccema": {
+              "type": "radio3",
+              "label": "Eccema",
+              "comments": null
+            },
+            "cutaneos_dermatitis": {
+              "type": "radio3",
+              "label": "Dermatits",
+              "comments": null
+            },
+            "cutaneos_cancer_piel": {
+              "type": "radio3",
+              "label": "Cáncer de piel",
+              "comments": null
+            },
+            "cutaneos_otras": {
+              "type": "radio3",
+              "label": "Otras",
+              "comments": null
+            }
+          }
+        },
+        "Exposición ambiental (Indique si ha trabajado o trabaja con las siguientes sustancias)": {
+          "icon": "exposicionAmbiental",
+          "questions": {
+            "exposicion_metales_pesados": {
+              "type": "radio3",
+              "label": "Metales pesados",
+              "comments": null
+            },
+            "exposicion_pinturas_disolventes": {
+              "type": "radio3",
+              "label": "Pinturas y disolventes",
+              "comments": null
+            },
+            "exposicion_resinas_pegamentos": {
+              "type": "radio3",
+              "label": "Resinas y pegamentos",
+              "comments": null
+            },
+            "exposicion_plaguicidas": {
+              "type": "radio3",
+              "label": "Plaguicidas",
+              "comments": null
+            },
+            "exposicion_humo": {
+              "type": "radio3",
+              "label": "Humo",
+              "comments": null
+            },
+            "exposicion_otras": {
+              "type": "radio3",
+              "label": "Otras",
+              "comments": null
+            }
+          }
+        },
+        "Actividad física/deportiva (Al menos 30 minutos)": {
+          "icon": "ejercicioFisico",
+          "questions": {
+            "actividad_periodo": {
+              "fullwidth": true,
+              "type": "select",
+              "options": [
+                {
+                  "name": "Ninguna o baja",
+                  "value": "Ninguna o baja"
+                },
+                {
+                  "name": "1 vez/semana",
+                  "value": "1 vez/semana"
+                },
+                {
+                  "name": "2 veces/semana",
+                  "value": "2 veces/semana"
+                },
+                {
+                  "name": "3 o más/semana",
+                  "value": "3 o más/semana"
+                },
+                {
+                  "name": "Diaria",
+                  "value": "Diaria"
+                }
+              ],
+              "label": "Actividad Fisica"
+            },
+            "actividad_deporte_fuerza": {
+              "type": "radio3",
+              "label": "Deportes de fuerza (pesas)",
+              "comments": null
+            },
+            "actividad_deporte_resistencia": {
+              "type": "radio3",
+              "label": "Deportes de resistencia (ciclismo, natación, footing)",
+              "comments": null
+            },
+            "actividad_deporte_mente_cuerpo": {
+              "type": "radio3",
+              "label": "Deportes mente-cuerpo (pilates, yoga)",
+              "comments": null
+            },
+            "actividad_inmovilidad_prolongada": {
+              "type": "radio3",
+              "label": "Inmovilidad prolongada frecuente (sedentarismo, vuelos y/o viajes en coche largos)",
+              "comments": null
+            }
+          }
+        },
+        "Dieta": {
+          "icon": "dieta",
+          "questions": {
+            "intolerancia_alimentaria": {
+              "type": "radio3",
+              "label": "Intolerancia Alimentaria",
+              "comments": null,
+              "subgroup": {
+                "_dependency": "Si",
+                "intolerancias": {
+                  "type": "multiple_choice",
+                  "label": "",
+                  "options": [
+                    {
+                      "value": "gluten",
+                      "icon": "gluten",
+                      "name": "Gluten"
+                    },
+                    {
+                      "value": "lactosa",
+                      "icon": "lactosa",
+                      "name": "Lactosa"
+                    },
+                    {
+                      "value": "fructosa",
+                      "icon": "fructosa",
+                      "name": "Fructosa"
+                    },
+                    {
+                      "value": "otras",
+                      "icon": "otras",
+                      "name": "Otras"
+                    }
+                  ]
+                }
+              }
+            },
+            "alergias_alimentarias": {
+              "type": "radio3",
+              "label": "Alergias Alimentarias",
+              "comments": null,
+              "subgroup": {
+                "_dependency": "Si",
+                "intolerancias": {
+                  "type": "multiple_choice",
+                  "fullwidth": true,
+                  "label": "",
+                  "options": [
+                    {
+                      "value": "frutos-secos",
+                      "icon": "frutos-secos",
+                      "name": "Frutos Secos"
+                    },
+                    {
+                      "value": "leche",
+                      "icon": "leche",
+                      "name": "Leche"
+                    },
+                    {
+                      "value": "pescados",
+                      "icon": "pescados",
+                      "name": "Pescados"
+                    },
+                    {
+                      "value": "soja",
+                      "icon": "soja",
+                      "name": "Soja"
+                    },
+                    {
+                      "value": "mariscos",
+                      "icon": "marisco",
+                      "name": "Mariscos"
+                    },
+                    {
+                      "value": "huevos",
+                      "icon": "huevos",
+                      "name": "Huevos"
+                    },
+                    {
+                      "value": "otras",
+                      "icon": "otras",
+                      "name": "Otras"
+                    }
+                  ]
+                }
+              }
+            },
+            "vegetariano": {
+              "type": "radio3",
+              "label": "vegetariano",
+              "comments": null
+            },
+            "vegano": {
+              "type": "radio3",
+              "label": "vegano",
+              "comments": null
+            },
+            "bebidas_alcoholicas": {
+              "type": "radio3",
+              "label": "bebidas alcoholicas",
+              "comments": null,
+              "subgroup": {
+                "_dependency": "Si",
+                "frecuencia": {
+                  "type": "single_choice",
+                  "label": "",
+                  "fullwidth": true,
+                  "options": [
+                    {
+                      "name": "Esporádicamente",
+                      "value": "Esporádicamente",
+                      "icon": "copa1"
+                    },
+                    {
+                      "name": "1-2 copas de cerveza/vino al día",
+                      "value": "1-2 copas de cerveza/vino al día",
+                      "icon": "copa1"
+                    },
+                    {
+                      "name": ">2 copas de cerveza/vino al día",
+                      "value": ">2 copas de cerveza/vino al día",
+                      "icon": "copa1"
+                    },
+                    {
+                      "name": "2-3 veces/semana",
+                      "value": "2-3 veces/semana",
+                      "icon": "copa2"
+                    }
+                  ]
+                }
+              }
+            },
+            "bebidas_blancas": {
+              "type": "radio3",
+              "label": "Bebidas blancas (gin. , ginebra, grapa, whisky, etc.)",
+              "comments": null,
+              "subgroup": {
+                "_dependency": "Si",
+                "frecuencia": {
+                  "type": "single_choice",
+                  "label": "",
+                  "options": [
+                    {
+                      "name": "1 vez/seman",
+                      "value": "1 vez/seman",
+                      "icon": "copa1"
+                    },
+                    {
+                      "name": "2/3 veces/semana",
+                      "value": "2/3 veces/semana",
+                      "icon": "copa2"
+                    },
+                    {
+                      "name": "Diariamente",
+                      "value": "Diariamente",
+                      "icon": "copa3"
+                    }
+                  ]
+                }
+              }
+            },
+            "bebidas_te": {
+              "type": "radio3",
+              "label": "Té (blanco, negro, verde)",
+              "comments": null,
+              "subgroup": {
+                "_dependency": "Si",
+                "frecuencia": {
+                  "type": "single_choice",
+                  "label": "",
+                  "options": [
+                    {
+                      "name": "1/2 tazas al día",
+                      "value": "1/2 tazas al día",
+                      "icon": "cafe1"
+                    },
+                    {
+                      "name": ">2 tazas al día",
+                      "value": ">2 tazas al día",
+                      "icon": "cafe2"
+                    }
+                  ]
+                }
+              }
+            },
+            "bebidas_cafe": {
+              "type": "radio3",
+              "label": "Bebidas café",
+              "comments": null,
+              "subgroup": {
+                "_dependency": "Si",
+                "frecuencia": {
+                  "type": "single_choice",
+                  "label": "",
+                  "options": [
+                    {
+                      "name": "1-3 tazas al día",
+                      "value": "1-3 tazas al día",
+                      "icon": "te1"
+                    },
+                    {
+                      "name": ">3 tazas al día",
+                      "value": ">3 tazas al día",
+                      "icon": "te2"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "Consumo Regular": {
+          "icon": "consumo",
+          "questions": {
+            "consumo_regular": {
+              "fullwidth": true,
+              "type": "multiple_choice",
+              "label": "",
+              "options": [
+                {
+                  "name": "Frutas",
+                  "value": "Frutas",
+                  "icon": "frutas"
+                },
+                {
+                  "name": "Verduras",
+                  "value": "Verduras",
+                  "icon": "verduras"
+                },
+                {
+                  "name": "Hidratos de Carbono",
+                  "value": "Hidratos de Carbono",
+                  "icon": "hidratos"
+                },
+                {
+                  "name": "Carne de pescado",
+                  "value": "Carne de pescado",
+                  "icon": "carnepescado"
+                },
+                {
+                  "name": "Aceites",
+                  "value": "Aceites",
+                  "icon": "aceite"
+                },
+                {
+                  "name": "Azucar",
+                  "value": "Azucar",
+                  "icon": "azucar"
+                },
+                {
+                  "name": "Carnes rojas (vaca, cerdo, cordero, pato, caza)",
+                  "value": "Carnes rojas (vaca, cerdo, cordero, pato, caza)",
+                  "icon": "carneroja"
+                },
+                {
+                  "name": "Carnes blancas (pollo, pavo, conejo)",
+                  "value": "Carnes blancas (pollo, pavo, conejo)",
+                  "icon": "carneblanca"
+                },
+                {
+                  "name": "Mariscos",
+                  "value": "Mariscos",
+                  "icon": "marisco"
+                },
+                {
+                  "name": "Aceites vegetales (oliva, girasol, maíz, etc.)",
+                  "value": "Aceites vegetales (oliva, girasol, maíz, etc.)",
+                  "icon": "soja"
+                },
+                {
+                  "name": "Soja (tofu u otros productos elaborados con soja)",
+                  "value": "Soja (tofu u otros productos elaborados con soja)",
+                  "icon": "soja"
+                },
+                {
+                  "name": "Sal (conservas, embutidos, ahumados, etc.)",
+                  "value": "Sal (conservas, embutidos, ahumados, etc.)",
+                  "icon": "sal"
+                },
+                {
+                  "name": "Azúcar (grandes cantidades)",
+                  "value": "Azúcar (grandes cantidades)",
+                  "icon": "azucar"
+                },
+                {
+                  "name": "Dieta \"light\"",
+                  "value": "Dieta \"light\"",
+                  "icon": "dieta"
+                },
+                {
+                  "name": "Comida rápida (hamburguesas, salchichas, frituras, etc.)",
+                  "value": "Comida rápida (hamburguesas, salchichas, frituras, etc.)",
+                  "icon": "comida-rapida"
+                },
+                {
+                  "name": "Soja",
+                  "value": "Soja",
+                  "icon": "soja"
+                }
+              ]
+            }
+          }
+        },
+        "Urológicas": {
+          "icon": "urologicas",
+          "questions": {
+            "urologicas_problemas_renales": {
+              "type": "radio3",
+              "label": "Problemas renales (quistes, diálisis, insufinciencia, etc.)",
+              "comments": null
+            },
+            "urologicas_problema_vejiga": {
+              "type": "radio3",
+              "label": "Problemas de vejiga",
+              "comments": null
+            },
+            "urologicas_alteraciones_genitales": {
+              "type": "radio3",
+              "label": "Alteraciones genitales (desarrollo incompleto, tamaño reducido, falta de algún genital, etc.)",
+              "comments": null
+            },
+            "urologicas_infeccion_transmision_sexual": {
+              "type": "radio3",
+              "label": "Infección de transmisión sexual (sífilis, clamida, gonorrea, HIV, hepatitis B, herpes, verrugas, etc.)",
+              "comments": null
+            },
+            "urologicas_vasectomia": {
+              "type": "radio3",
+              "label": "Vasectomía",
+              "comments": null
+            },
+            "urologicas_trastornos_prostata": {
+              "type": "radio3",
+              "label": "Trastornos de la próstata",
+              "comments": null
+            }
+          }
+        }
+      }
+    }
+  }
+}

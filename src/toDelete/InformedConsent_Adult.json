@@ -1,0 +1,157 @@
+{
+  "form": {
+    "Consentimiento Informado": {
+      "description": "<div style='padding: 10px;'><ol><li>Yo,<strong> CUSTOMER.NAME, </strong>CUSTOMER.IDNUMBER xxxxxxxxxxxxx, con domicilio en xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx, mayor de edad, doy mi consentimiento para realizar la secuenciaci&oacute;n completa de mi ADN, y realizar las pruebas gen&eacute;ticas que brinda el servicio de MY DNA MAP S.L., al que me encuentro suscripto.<br/><br/></li><li>He le&iacute;do o me han le&iacute;do, y comprendo el contenido de la &ldquo;Hoja de informaci&oacute;n&rdquo; relativo a las pruebas gen&eacute;ticas que ser&aacute;n realizadas.<br/><br/></li><li>Confirmo que en el contexto de una sesi&oacute;n de asesoramiento gen&eacute;tico he sido informado sobre los diferentes aspectos de las pruebas gen&eacute;ticas, tal como se explica en la 'Hoja de informaci&oacute;n' (incluidas las caracter&iacute;sticas, los riesgos, las limitaciones, los beneficios y las alternativas). He podido realizar todas las preguntas que podr&iacute;a haber tenido acerca de las pruebas, antes de emitir mi consentimiento informado, y he obtenido respuestas satisfactorias. He comprendido la informaci&oacute;n recibida y he tenido tiempo suficiente para tomar decisiones.<br/><br/></li><li>Autorizo la recolecci&oacute;n, almacenamiento y an&aacute;lisis de la muestra de ADN.<br/><br/></li><li>Estoy de acuerdo en que la muestra biol&oacute;gica sea guardada en un biobanco&nbsp;mientras dure mi suscripci&oacute;n y al finalizar la misma, la muestra sea destruida.<br/><br/></li><li>Debido a que la comprensi&oacute;n de la informaci&oacute;n gen&eacute;tica mejorar&aacute; con el tiempo, acepto que se me notifique de las actualizaciones cl&iacute;nicas relacionadas a mi perfil gen&eacute;tico.<br/><br/></li><li>Autorizo ​​la recolecci&oacute;n y el almacenamiento de datos gen&eacute;ticos y anal&iacute;ticos, completamente anonimizados, en una Base de Datos; siendo el &uacute;nico que puede vincular mis datos filiales con el resultado del an&aacute;lisis gen&eacute;tico, a trav&eacute;s de un c&oacute;digo de acceso &uacute;nico.<br/><br/></li><li>Estoy de acuerdo en que los resultados del an&aacute;lisis de ADN se utilicen, sin datos de filiaci&oacute;n y garantizando la confidencialidad y el anonimato, para estudios de investigaci&oacute;n y estad&iacute;sticas.<br/><br/></li><li>Entiendo que puedo optar por <strong>no ser informado</strong>acerca de los hallazgos de determinados paneles, en la consulta POST an&aacute;lisis que tendr&eacute; con el asesor gen&eacute;tico, para lo cual completo el <strong>Anexo 1</strong>. Comprendo que, a pesar de ello, tendr&eacute; acceso a esa informaci&oacute;n a trav&eacute;s de mi usuario y contrase&ntilde;a, en el momento en el que lo desee.<br/><br/></li><li>Todos los registros, hallazgos y resultados de cualquier prueba gen&eacute;tica realizada en mi muestra biol&oacute;gica, se tratar&aacute;n como confidenciales y, a menos que as&iacute; lo autorice yo o la ley, no se divulgar&aacute;n sin mi consentimiento informado por escrito.<br/><br/></li><li>Entiendo que puedo desistir del servicio brindado por MY DNA MAP S.L.en el momento que lo desee, a trav&eacute;s de los mecanismos establecidos por MY DNA MAP S.L., a tal fin, y que declaro conocer.<br/><br/></li><li>Acuerdo que cualquier controversia que pueda surgir, relacionada con este Consentimiento Informado o servicios brindados por MY DNA MAP S.L., se resolver&aacute; por medio de Arbitraje.</li></ol><p>Mi firma a continuaci&oacute;n constituye mi reconocimiento, bajo declaraci&oacute;n jurada, de que:</p><ul><li>la muestra entregada ser&aacute; m&iacute;a.</li><li>los beneficios, riesgos y limitaciones de esta prueba han sido explicados a mi satisfacci&oacute;n por un asesor gen&eacute;tico calificado y se me ha proporcionado la informaci&oacute;n t&eacute;cnica adicional (seg&uacute;n corresponda) que describe la(s) prueba(s) gen&eacute;tica(s) a ser realizada(s).</li></ul></div>",
+      "groups": {
+        "ConsentimientoInformado": {
+          "label": "Consentimiento Informado",
+          "noIcon": true,
+          "questions": {
+            "nombre": {
+              "type": "text",
+              "label": "Nombre",
+              "required": true
+            },
+            "apellido": {
+              "type": "text",
+              "label": "Apellido",
+              "required": true,
+              "subgroup": {
+                "nombre": {
+                  "type": "text",
+                  "label": "Nombre",
+                  "required": true
+                },
+                "apellido": {
+                  "type": "text",
+                  "label": "Apellido",
+                  "required": true
+                }
+              }
+            },
+            "dni": {
+              "type": "text",
+              "label": "DNI",
+              "required": true
+            },
+            "acepto_condiciones": {
+              "isRequired": true,
+              "fullwidth": true,
+              "type": "checkbox",
+              "label": "He leído y acepto las condiciones expuestas anteriormente.",
+              "comments": null,
+              "response": false
+            }
+          }
+        }
+      }
+    },
+    "Anexo 1": {
+      "visibleTitle": true,
+      "description": "<div style='padding: 10px;'><ol><li><p>Entiendo/entendemos&nbsp;que puedo/podemos&nbsp;optar por <strong>no ser informado</strong><strong>(s)</strong>&nbsp;acerca de los hallazgos de determinados paneles, en la consulta POST an&aacute;lisis que tendr&eacute; con el asesor gen&eacute;tico.</p><p>Para lo cual, manifiesto/manifestamos mi/nuestra voluntad, al marcar&nbsp;los casilleros correspondientes:</p><p>Asimismo, comprendo que, a pesar de ello, tendr&eacute;(mos)&nbsp;acceso a esa informaci&oacute;n a trav&eacute;s de el&nbsp;usuario y contrase&ntilde;a&nbsp;indicado, en el momento en el que lo desee(mos).</p></li></ol></div>",
+      "groups": {
+        "Anexo1": {
+          "label": "NO ser informado (Marcar los campos de los que NO quiero recibir información)",
+          "icon": null,
+          "questions": {
+            "ancestria": {
+              "type": "checkbox",
+              "label": "Ancestría",
+              "required": true,
+              "response": false
+            },
+            "Nutrigenética": {
+              "type": "checkbox",
+              "label": "Nutrigenética",
+              "required": true,
+              "response": false
+            },
+            "Deportes": {
+              "type": "checkbox",
+              "label": "Deportes",
+              "required": true,
+              "response": false
+            },
+            "Farmacogenética": {
+              "type": "checkbox",
+              "label": "Farmacogenética",
+              "required": true,
+              "response": false
+            },
+            "Cardio": {
+              "type": "checkbox",
+              "label": "Cardio",
+              "required": true,
+              "response": false
+            },
+            "Cáncer": {
+              "type": "checkbox",
+              "label": "Cáncer",
+              "required": true,
+              "response": false
+            },
+            "Portadores": {
+              "type": "checkbox",
+              "label": "Portadores",
+              "required": true,
+              "response": false
+            },
+            "Fertilidad": {
+              "type": "checkbox",
+              "label": "Fertilidad",
+              "required": true,
+              "response": false
+            },
+            "Neuro": {
+              "type": "checkbox",
+              "label": "Neuro",
+              "required": true,
+              "response": false
+            },
+            "Adicciones": {
+              "type": "checkbox",
+              "label": "Adicciones",
+              "required": true,
+              "response": false
+            }
+          }
+        }
+      }
+    },
+    "Finalidad del análisis genético que usted solicita a MyDNAmap": {
+      "visibleTitle": true,
+      "description": "<div style='padding: 10px;'><p style='text-align: justify;'>MyDNAmap&nbsp;ofrece un servicio de asesoramiento basado en el an&aacute;lisis del perfil gen&eacute;tico resultante de t&eacute;cnicas de secuenciaci&oacute;n masiva donde el material gen&eacute;tico (ADN) de un individuo puede ser estudiado y sus variantes (cambios) pueden ser identificadas. Los resultados estad&iacute;sticamente significativos obtenidos son revisados y analizados por bi&oacute;logos moleculares, bioinform&aacute;ticos y m&eacute;dicos que utilizan criterios estrictos para la generaci&oacute;n de un informe t&eacute;cnico. Las variantes son reportadas juntamente con la discusi&oacute;n sobre sus caracter&iacute;sticas, importancia, impacto, validez cl&iacute;nica y referencia bibliogr&aacute;fica correspondiente.&nbsp;</p><p style='text-align: justify;'>La interpretaci&oacute;n de los resultados estar&aacute; siempre limitada por la literatura cient&iacute;fica disponible en el momento de la generaci&oacute;n del informe t&eacute;cnico. Dado que la bibliograf&iacute;a y el conocimiento m&eacute;dico y cient&iacute;fico est&aacute;n en constante cambio, la nueva informaci&oacute;n que est&eacute; disponible en el futuro puede ser que reemplace a la informaci&oacute;n que utiliz&oacute;&nbsp;MyDNAmap.&nbsp;</p><p style='text-align: justify;'>La empresa ofrece una prueba de detecci&oacute;n gen&eacute;tica dirigida generalmente a personas sanas y en ning&uacute;n caso debe ser utilizada para diagn&oacute;stico. El estudio tiene como objetivo fomentar la prevenci&oacute;n de enfermedades, patolog&iacute;as y/o afecciones. Usted ser&aacute; informado sobre su posible predisposici&oacute;n gen&eacute;tica a padecer distintas enfermedades, capacidad de metabolizaci&oacute;n de algunos f&aacute;rmacos y respuesta a tratamientos o de ser portador de determinadas enfermedades de transmisi&oacute;n hereditaria. A su vez, se le podr&aacute; informar sobre el origen &eacute;tnico-geogr&aacute;fico de sus antepasados, la variabilidad gen&eacute;tica a la ingesta de ciertos nutrientes y su influencia en el rendimiento deportivo.&nbsp;&nbsp;</p><p style='text-align: justify;'>Cada informe gen&eacute;tico describe si una persona tiene variantes asociadas a enfermedades hereditarias, pero no describe el riesgo general de una persona de desarrollar la enfermedad. El prop&oacute;sito de la prueba no es decirle nada sobre su estado de salud actual ni ser utilizado para tomar decisiones m&eacute;dicas, incluido si debe o no tomar un medicamento, la cantidad de medicamento que debe tomar o determinar un tratamiento.&nbsp;</p><p style='text-align: justify;'>La informaci&oacute;n obtenida a trav&eacute;s de la prestaci&oacute;n del servicio de an&aacute;lisis gen&eacute;tico no est&aacute; concebida para diagnosticar ninguna afecci&oacute;n, patolog&iacute;a o enfermedad.&nbsp;</p><p style='text-align: justify;'><strong>Procesamiento de su muestra biol&oacute;gica y la Seguridad de los datos de identificaci&oacute;n</strong>&nbsp;</p><p style='text-align: justify;'>Su muestra biol&oacute;gica&nbsp;(saliva)&nbsp;se enviar&aacute; al laboratorio contratado por&nbsp;MyDNAmap&nbsp;que&nbsp;procesar&aacute;&nbsp;su ADN para su&nbsp;posterior&nbsp;secuenciaci&oacute;n de su&nbsp;genoma. Su muestra biol&oacute;gica ser&aacute; guardada en un biobanco&nbsp;mientras dure su suscripci&oacute;n y al finalizar la misma, su muestra ser&aacute; destruida.&nbsp;&nbsp;</p><p style='text-align: justify;'>Sus datos ser&aacute;n sometidos a un proceso de disociaci&oacute;n, para ello&nbsp;MyDNAmap&nbsp;los dispondr&aacute; en tres plataformas diferentes: 1) datos filiatorios; 2) datos gen&oacute;micos; 3) datos m&eacute;dicos, geogr&aacute;ficos y h&aacute;bitos de vida.</p><p style='text-align: justify;'>Ni&nbsp;MyDNAmap ni el laboratorio contratado podr&aacute; relacionar sus datos filiatorios con sus otros datos.  S&oacute;lo usted, a trav&eacute;s de sus claves personales, podr&aacute; relacionar su identidad con su perfil gen&eacute;tico.<strong>&nbsp;</strong><strong>&nbsp;</strong></p><p style='text-align: justify;'><strong>Informe del resultado de su an&aacute;lisis gen&eacute;tico</strong></p><p style='text-align: justify;'>El informe obtenido despu&eacute;s de su an&aacute;lisis gen&eacute;tico ser&aacute; de su propiedad y s&oacute;lo usted podr&aacute; decidir compartir esa informaci&oacute;n, total o parcialmente, a las personas que considere, entendiendo los riesgos que esto conlleve.</p><p style='text-align: justify;'>La informaci&oacute;n facilitada por&nbsp;MyDNAmap&nbsp;tras realizar su an&aacute;lisis gen&eacute;tico puede arrojar un resultado positivo o negativo y esto puede provocarle situaciones de estr&eacute;s emocional. En el caso que su informaci&oacute;n gen&eacute;tica indique un riesgo superior a la media (riesgo estad&iacute;stico) para desarrollar una determinada afecci&oacute;n, enfermedad o patolog&iacute;a, esto no significa una certeza en el desarrollo futuro de la misma. Esto se debe a que otros factores como el estilo de vida, el medio ambiente y los antecedentes familiares tambi&eacute;n pueden incidir en su riesgo.</p><p style='text-align: justify;'>Saber que tiene un factor de riesgo gen&eacute;tico para una enfermedad puede ser dif&iacute;cil y es importante pensar en lo que este tipo de informaci&oacute;n podr&iacute;a significar para usted.</p><p style='text-align: justify;'><strong>Informaci&oacute;n de resultados en los casos de ni&ntilde;os (0-18 a&ntilde;os)</strong></p><p style='text-align: justify;'>MyDNAmap&nbsp;s&oacute;lo informar&aacute; en los ni&ntilde;os aquellos resultados que puedan ser de utilidad en la edad pedi&aacute;trica y no se entregar&aacute; informaci&oacute;n de las condiciones gen&eacute;ticas que tienen inicio en la edad adulta o requiere inicio de vigilancia en la edad adulta, siguiendo las recomendaciones de la Asociaci&oacute;n Espa&ntilde;ola de Gen&eacute;tica Humana y American&nbsp;College&nbsp;of&nbsp;Medicine&nbsp;Genetics&nbsp;and&nbsp;Genomics. Una vez que el ni&ntilde;o sea mayor de edad, este podr&aacute; obtener el resto de la informaci&oacute;n, si as&iacute; lo quisiese.&nbsp;&nbsp;</p><p style='text-align: justify;'><strong>Descubrimientos inesperados y su posible trascendencia</strong></p><p style='text-align: justify;'>Existe la posibilidad que usted obtenga informaci&oacute;n gen&eacute;tica sobre s&iacute; mismo que no esperaba. Algunos de nuestros informes se refieren a enfermedades graves que pueden no tener un tratamiento o cura efectivos. Otros pueden tener opciones de tratamiento o prevenci&oacute;n efectivas, pero estas acciones pueden conllevar sus propios riesgos para la salud. Puede estar molesto al conocer los riesgos gen&eacute;ticos de estas enfermedades y los riesgos gen&eacute;ticos de los miembros de la familia que comparten el ADN. Si tiende a sentirse ansioso o tiene un historial personal de depresi&oacute;n o ansiedad, es probable que esta informaci&oacute;n sea m&aacute;s molesta. Conocer los riesgos gen&eacute;ticos tambi&eacute;n podr&iacute;a afectar a sus h&aacute;bitos de vida.</p><p style='text-align: justify;'>Usted puede elegir excluir determinados informes individualmente antes de que se le devuelvan los resultados.</p><p style='text-align: justify;'>Saber que tiene un factor de riesgo gen&eacute;tico para una enfermedad puede ser dif&iacute;cil y es importante pensar en lo que este tipo de informaci&oacute;n podr&iacute;a significar para usted.</p><p style='text-align: justify;'><strong>Implicaci&oacute;n que puede tener para sus familiares la informaci&oacute;n que se llegue a obtener</strong><strong>&nbsp;</strong></p><p style='text-align: justify;'>Las enfermedades gen&eacute;ticas pueden heredarse y los resultados de su test pueden tener implicaciones para su propia familia<strong>.</strong></p><p style='text-align: justify;'>Su familia puede o no querer saber esta informaci&oacute;n, y las relaciones con los dem&aacute;s pueden verse afectadas al conocer su ADN.&nbsp;&nbsp;</p><p style='text-align: justify;'>Es posible que tenga que evaluar la posibilidad de compartir dicha informaci&oacute;n con otros miembros de la familia.&nbsp;</p><p style='text-align: justify;'>La asesor&iacute;a gen&eacute;tica puede ayudarlo a comprender sus resultados y opciones.&nbsp;&nbsp;</p><p style='text-align: justify;'><strong>Consejo gen&eacute;tico</strong></p><p style='text-align: justify;'>Se deben considerar varios factores al decidir realizar una prueba gen&eacute;tica y si es adecuada para usted. Aunque estas pruebas pueden proporcionar informaci&oacute;n importante sobre los riesgos para la salud, tambi&eacute;n pueden alterar o plantear preguntas sobre el significado de los resultados. Las pruebas gen&eacute;ticas tambi&eacute;n tienen ciertas limitaciones que son importantes para comprender. Su historial m&eacute;dico personal y familiar, as&iacute; como sus objetivos para la prueba, deben tener en cuenta sus decisiones sobre si y c&oacute;mo realizar la prueba.&nbsp;</p><p style='text-align: justify;'>Un asesor gen&eacute;tico podr&aacute; responder sus preguntas y ayudarlo a tomar una decisi&oacute;n informada.&nbsp;&nbsp;</p><p style='text-align: justify;'>Se recomienda que hable con un asesor gen&eacute;tico antes y tambi&eacute;n despu&eacute;s de la prueba para ayudarlo a comprender sus resultados y las medidas que debe tomar. Esto es especialmente importante para las condiciones de salud que se pueden prevenir o tratar.&nbsp;</p><p style='text-align: justify;'>Usted podr&aacute; tener acceso a asesoramiento gen&eacute;tico, a trav&eacute;s de&nbsp;MyDNAmap.&nbsp;&nbsp;</p><p style='text-align: justify;'><strong>Metodolog&iacute;a utilizada y limitaciones&nbsp;</strong>&nbsp;</p><ul style='text-align: justify;'><li>La secuenciaci&oacute;n del genoma completo (Whole genome sequencing - WGS) est&aacute; realizada en los sistemas Illumina HiSeq X10 o NovaSeq 6000 (IlluminaPE150; Q30&ge;80%; 350bpinsertsize) y alineada con el genoma humano de referencia GRCh38. myDNAmap se reserva el derecho de cambiar de secuenciador en cualquier momento, manteniendo o mejorando la calidad del an&aacute;lisis.</li><li>No se detectan: grandes deleciones/duplicaciones/inserciones, variantes en el n&uacute;mero de copias (CNVs), translocaciones, inversiones, reordenamientos estructurales, aneuploid&iacute;as, secuencias repetidas largas, expansi&oacute;n de tripletes, variantes som&aacute;ticas, mosaicismo germinal, defectos/alteraciones epigen&eacute;ticas o estado de metilaci&oacute;n, disom&iacute;a uniparental, variantes en zonas repetitivas o en regiones ricas en GCs, variantes en genes con pseudogenes o con elevada homolog&iacute;a. No se cuantifica heteroplastia mitocondrial.</li><li>No se puede descartar la presencia de alelos nulos. La variaci&oacute;n gen&oacute;mica normal/ polim&oacute;rfica en la muestra del individuo puede interferir en la detecci&oacute;n de variantes. La sensibilidad de la t&eacute;cnica puede verse afectada en regiones de bajo/alto contenido de GC, adyacentes a homopol&iacute;meros y/o simples secuencias repetitivas (SSRs).</li><li>En el caso de detecci&oacute;n de m&aacute;s de una variante en el mismo gen o en genes distintos (herencia digénica), la t&eacute;cnica empleada no permite distinguir si las variantes se localizan en el mismo alelo (cis) o en alelos distintos (trans). Para su discriminaci&oacute;n se recomienda el estudio de ambos progenitores.</li><li>myDNAmap no se hace responsable de los errores cometidos por el usuario en cuanto a la recolecci&oacute;n y etiquetado de las muestras.</li><li>myDNAmap no realizará pruebas de paternidad ni de ning&uacute;n tipo de parentesco. Sin embargo, de los informes podr&iacute;an surgir datos de tipo filiatorio.</li><li>En el caso que no se observe una buena calidad de la muestra para extraer el ADN (material biol&oacute;gico insuficiente o que se encuentre en mal estado para su procesamiento y realizaci&oacute;n de un an&aacute;lisis adecuado), se solicitará el envi&oacute; de una nueva muestra biol&oacute;gica.</li><li>La informaci&oacute;n gen&eacute;tica proporcionada en ning&uacute;n caso es v&aacute;lida para uso diagn&oacute;stico y no implica la posibilidad de determinar la edad de inicio ni el tipo o gravedad de las enfermedades, tampoco permite descartar la existencia de heterogeneidad cl&iacute;nica o gen&eacute;tica.</li><li>Las variantes detectadas y reportadas en nuestros informes t&eacute;cnicos no se confirman con secuenciaci&oacute;n de tipo Sanger.</li><li>Presentar una predisposici&oacute;n no significa necesariamente que la enfermedad se desarrolle. La penetrancia gen&eacute;tica y los factores ambientales tambi&eacute;n pueden influir en la manifestaci&oacute;n de una enfermedad de origen gen&eacute;tico.</li><li>Debido a que ning&uacute;n test es 100% preciso, existe la posibilidad de que resulten falsos negativos o falsos positivos, los cuales pueden ocurrir por diversas razones, incluyendo problemas t&eacute;cnicos, conocimiento cient&iacute;fico y cl&iacute;nico limitado en el momento de la realizaci&oacute;n del informe, complejidad de las condiciones analizadas con diferentes factores gen&eacute;ticos y ambientales involucrados en su etiolog&iacute;a etc.</li><li>La interpretaci&oacute;n de los resultados siempre estar&aacute;́ limitada por la informaci&oacute;n disponible en el momento del an&aacute;lisis, la literatura cient&iacute;fica y su posible aplicaci&oacute;n a pruebas gen&eacute;ticas individuales</li><li>La presencia de una variante patog&eacute;nica, probablemente patog&eacute;nica o de un polimorfismo asociado a cierto fenotipo no descarta la posibilidad de que un paciente presente o desarrolle un fenotipo diferente (o no documentado) al que se informa en este estudio, bas&aacute;ndonos en la bibliograf&iacute;a y evidencia cient&iacute;fica en el momento del an&aacute;lisis. Un resultado negativo no implica la ausencia de una variante patog&eacute;nica o probablemente patog&eacute;nica fuera de los genes analizados.</li></ul><p style='text-align: justify;'>-Las variantes informadas son nombradas en base a las recomendaciones de la Sociedad de Variaci&oacute;n del Genoma Humano (Human Genome Variation Society - HGVS).</p><ul style='text-align: justify;'><li>Para los paneles de medicina predictiva: &Uacute;nicamente se informar&aacute;n variantes germinales de nucle&oacute;tido simple (SNV) y peque&ntilde;as inserciones/deleciones (indels) que est&eacute;n clasificadas como patog&eacute;nicas, probablemente patog&eacute;nicas en el momento de la realizaci&oacute;n del informe bas&aacute;ndonos en la bibliograf&iacute;a y evidencia cient&iacute;fica disponibles. Asimismo, no se reportan variantes clasificadas como benignas, probablemente benignas y de significado incierto (VUS &ndash; variant of uncertain or unknown significance), variantes localizadas en regiones intrónicas profundas (ubicados a m&aacute;s de 20pb de regiones codificantes) o variantes localizadas en las regiones 3&rsquo; y 5&rsquo; no traducidas. La clasificaci&oacute;n y an&aacute;lisis de las variantes se lleva a cabo siguiendo los criterios de a base de datos de ClinVar (NCBI).</li><li>Para los paneles de nutrici&oacute;n, deporte y adicciones: analizamos una serie de variantes (SNVs e indels) relacionadas con distintos rasgos asociados a la nutrici&oacute;n, el deporte y las adicciones. Para un rasgo dado, los genotipos de las variantes relacionadas son clasificados como asociados a un efecto beneficioso o desventajoso. Se calcula entonces un score de perfil gen&eacute;tico que da cuenta del riesgo o beneficio gen&eacute;tico del usuario para cada rasgo. Se analizan y reportan de manera conjunta, englobados en categor&iacute;as con el c&aacute;lculo de un score de riesgo/beneficio.</li><li>Para el panel de farmacogen&eacute;tica: analizamos una serie de genes relacionados con el metabolismo, la dosificaci&oacute;n, la eficacia y la toxicidad/eventos adversos de ciertos f&aacute;rmacos sobre el organismo. Los haplotipos analizados son estimados in silico y mediante el an&aacute;lisis de datos no faseados. Esto implica que se desconoce en qu&eacute; cromosoma est&aacute;n las variantes gen&eacute;ticas utilizadas para estimar el haplotipo. Un estudio de segregaci&oacute;n familiar puede informar haplotipos distintos a partir de datos faseados. Los programas utilizados son pharmCAT, Astrolabe, HISAT/HISAT2, junto a procesos inform&aacute;ticos propios de verificaci&oacute;n y an&aacute;lisis de variantes complejas. La informaci&oacute;n reflejada se centra &uacute;nicamente en los genes analizados en este informe y no tiene en cuenta otros factores tanto gen&eacute;ticos, fisiol&oacute;gicos y ambientales que puedan influir en el efecto de los f&aacute;rmacos.</li></ul><p style='text-align: justify;'><strong>Nota</strong>: Los dispositivos para la toma de muestras de saliva para la secuenciaci&oacute;n, son provistas por la empresa DNAGenotek&reg;, que ha publicado varios estudios que prueban que la soluci&oacute;n utilizada para estabilizar la muestra inactiva m&aacute;s del 99% de los virus que pudiera contener, incluyendo el SARS-COV2. El transporte de la muestra, adem&aacute;s, cumple con la normativa de IATA y la regulaci&oacute;n de Naciones Unidas sobre el transporte de sustancias biol&oacute;gicas de tipo B (saliva).</p></div>",
+      "groups": {
+        "ConsentimientoFinalidadAnalisis": {
+          "label": "Consentimiento sobre la finalidad del análisis genético",
+          "noIcon": true,
+          "questions": {
+            "nombre": {
+              "type": "text",
+              "label": "Nombre",
+              "required": true
+            },
+            "apellido": {
+              "type": "text",
+              "label": "Apellido",
+              "required": true
+            },
+            "dni": {
+              "type": "text",
+              "label": "DNI",
+              "required": true
+            },
+            "acepto_condiciones": {
+              "isRequired": true,
+              "fullwidth": true,
+              "type": "checkbox",
+              "label": "He leído y acepto las condiciones sobre la finalidad del análisis genético solicitado.",
+              "comments": null,
+              "response": false
+            }
+          }
+        }
+      }
+    }
+  }
+}
